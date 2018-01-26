@@ -11,5 +11,11 @@
 
     <artifactId>web-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>SecondMaven</groupId>
+            <artifactId>web-server</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
