@@ -11,5 +11,6 @@
     <modules>
         <module>web-api</module>
         <module>web-server</module>
+        <module>web-common</module>
     </modules>
 </project>
