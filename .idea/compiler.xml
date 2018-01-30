@@ -13,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SecondMaven" target="1.5" />
-      <module name="web-api" target="1.5" />
+      <module name="web-api" target="1.8" />
       <module name="web-common" target="1.5" />
       <module name="web-server" target="1.5" />
     </bytecodeTargetLevel>

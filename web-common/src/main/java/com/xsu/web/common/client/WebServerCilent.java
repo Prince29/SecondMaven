@@ -102,7 +102,7 @@ public class WebServerCilent {
      * @return
      * @throws IOException
      */
-    private <T extends BaseResponse> T newResponseInstance(BaseRequest request)throws IOException{
+    private <T extends BaseResponse> T newResponseInstance(BaseRequest<T> request)throws IOException{
         Class<T> clazz=getResponseType(request);
         try{
             return clazz.newInstance();
@@ -119,7 +119,7 @@ public class WebServerCilent {
      * @return
      * @throws IOException
      */
-    private <T extends BaseResponse> Class<T> getResponseType(BaseRequest request)throws IOException{
+    private <T extends BaseResponse> Class<T> getResponseType(BaseRequest<T> request)throws IOException{
         Class<?> requestClass=request.getClass();
         //当前对象的直接超类的type
         Type superType=requestClass.getGenericSuperclass();
